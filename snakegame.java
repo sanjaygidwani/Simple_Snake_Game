@@ -41,19 +41,17 @@ class SnakeGame {
 	
 	public static void clrscr() // clear screen method
 	{
-     try 
-	{
-        if (System.getProperty("os.name").contains("Windows"))
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        else
-            Runtime.getRuntime().exec("clear");
-    } catch (IOException | InterruptedException ex) {}
-    }
+         try {
+            if (System.getProperty("os.name").contains("Windows"))
+               new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            else
+               Runtime.getRuntime().exec("clear");
+         } catch (IOException | InterruptedException ex) {}
+        }
 	
 	public static void Draw() // drawing boundaries, showing snake, tail and fruit
 	{
-        clrscr();
-		
+        clrscr();	
 		for(int i = 0; i < width+2; i++) // upper horizontal boundary
 			System.out.print("#");
 		System.out.print("\n");
@@ -83,8 +81,7 @@ class SnakeGame {
 					}
 					if(!print)
 						System.out.print(" "); 
-				}
-				
+				}				
 				if(j == width-1)
 					System.out.print("#"); // right vertical boundary
 			}
@@ -112,7 +109,7 @@ class SnakeGame {
 			          break;
 			case 'x': gameOver = true;
 			          break;
-		    default: break;
+		        default: break;
 		}
 	}
 	
@@ -162,7 +159,7 @@ class SnakeGame {
 		{
 			score += 10;
 			fruitX = (int)Math.ceil(Math.random() * 100) % width; // randomly placing fruit again after eating
-		    fruitY = (int)Math.ceil(Math.random() * 100) % height;
+		        fruitY = (int)Math.ceil(Math.random() * 100) % height;
 			nTail ++; // increasing tail size by 1
 		}
 	}
