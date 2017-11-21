@@ -8,8 +8,6 @@
 
 • Requirements: JRE
 
-• How to Run:
-->javac snakegame.java
-->java SnakeGame
+• How to Run: 1) javac snakegame.java 2) java SnakeGame
 
 ``Copyright © 2017 sgidwani96(Sanjay Gidwani). All rights reserved.``
