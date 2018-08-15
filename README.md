@@ -10,4 +10,4 @@
 
 • How to Run: (1) javac snakegame.java (2) java SnakeGame
 
-``Copyright © 2017 sgidwani96(Sanjay Gidwani). All rights reserved.``
+``Copyright © 2017 Sanjay Gidwani``
