@@ -6,6 +6,8 @@ I used Java programming language to create this project.
 
 Requirements: JRE
 
-How to Run: (1) javac snakegame.java (2) java SnakeGame
+How to Run: 
+1. javac snakegame.java 
+2. java SnakeGame
 
 ![](project_img.png)
