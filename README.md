@@ -1,13 +1,11 @@
 # Simple Snake Game
 
-• A simple snake game which can be played on a system console (e.g. command prompt).
+All the rules are pretty much similar to a typical snake game. The snake moves with [W (up), S (down), A (left), D (right)] + Enter buttons. Every time the snake eats a fruit, the total score increases by 10. Game quits on pressing X.
 
-• Snake will move with [ W(up), A(left), D(right) and S(down) ] + Enter (limitation). Everytime snake eats a fruit score increments by 10. Game quits on pressing X.
+I used Java programming language to create this project.
 
-• Programming Language: Java
+Requirements: JRE
 
-• Requirements: JRE
+How to Run: (1) javac snakegame.java (2) java SnakeGame
 
-• How to Run: (1) javac snakegame.java (2) java SnakeGame
-
-``Copyright © 2017 Sanjay Gidwani``
+![](project_img.png)
