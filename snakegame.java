@@ -82,7 +82,8 @@ class SnakeGame
 					}
 					if(!print)
 						System.out.print(" "); 
-				}				
+				}
+				
 				if(j == width-1)
 					System.out.print("#"); // right vertical boundary
 			}
