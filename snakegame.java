@@ -2,8 +2,8 @@ import java.util.*;
 import java.lang.*;
 import java.io.IOException;
 
-class SnakeGame {
-	
+class SnakeGame 
+{	
 	public static final int width = 30, height = 20; // game boundaries
 	public static int x, y, fruitX, fruitY, score; // x-axis and y-axis, fruit and score
 	public static boolean gameOver; // gameover flag
@@ -41,17 +41,19 @@ class SnakeGame {
 	
 	public static void clrscr() // clear screen method
 	{
-         try {
-            if (System.getProperty("os.name").contains("Windows"))
-               new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            else
-               Runtime.getRuntime().exec("clear");
-         } catch (IOException | InterruptedException ex) {}
+        	try 
+		{
+            		if (System.getProperty("os.name").contains("Windows"))
+               			new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            		else
+               			Runtime.getRuntime().exec("clear");
+         	} 
+		catch (IOException | InterruptedException ex) {}
         }
 	
 	public static void Draw() // drawing boundaries, showing snake, tail and fruit
 	{
-        clrscr();	
+        	clrscr();	
 		for(int i = 0; i < width+2; i++) // upper horizontal boundary
 			System.out.print("#");
 		System.out.print("\n");
@@ -67,7 +69,6 @@ class SnakeGame {
 					System.out.print("O");
 				else if(i == fruitY && j == fruitX) // fruit's position
 					System.out.print("F");
-					
 				else
 				{
 					boolean print = false;
@@ -143,7 +144,7 @@ class SnakeGame {
 			default: break;
 		}
 		
-	/*  if(x > width || x < 0 || y > height || y < 0) // snake touches wall, gameover 
+	     /* if(x > width || x < 0 || y > height || y < 0) // snake touches wall, gameover 
 			gameOver = true; */
 	    
 		if(x >= width) x = 0; else if(x < 0) x = width-1; // snake touches wall, appears from another side
